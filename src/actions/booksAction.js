@@ -1,7 +1,11 @@
+import { BOOKS_TYPES } from '../types';
 function selectBook(book) {
-  console.log(`A book has been selected ${book.title}`);
+    return {
+        type: BOOKS_TYPES.BOOK_SELECTED,
+        payload: book
+    };
 }
 
-export {
+export default {
   selectBook,
 };
