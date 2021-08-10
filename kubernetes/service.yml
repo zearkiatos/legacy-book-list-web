@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-08-06T01:11:13Z"
+  labels:
+    app: legacy-book-list-web
+  name: legacy-book-list-web
+  namespace: default
+  resourceVersion: "27855"
+  selfLink: /api/v1/namespaces/default/services/legacy-book-list-web
+  uid: a45333fd-8817-4db6-aa95-bf9c97ae670f
+spec:
+  clusterIP: 10.103.121.44
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31549
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: legacy-book-list-web
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}

@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: legacy-book-list-web
+    volumes: 
+      - ".:/app"
+    ports:
+      - "0.0.0.0:8080:8080"
