@@ -1,0 +1,5 @@
+const BOOKS_TYPES = {
+    BOOK_SELECTED: 'BOOK_SELECTED'
+}
+
+export default BOOKS_TYPES;
